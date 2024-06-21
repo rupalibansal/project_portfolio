@@ -1,0 +1,82 @@
+@import "navbar";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+// About Section Styling
+.about {
+  background-color: $lightBrown;
+  padding: 0 60px;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 820px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+    @include tablet {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+
+    &--text {
+      max-width: 900px;
+      padding: 10px;
+    }
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      line-height: 1.2;
+      @include tablet {
+        padding: 5rem 0;
+      }
+
+      @include mobile {
+        line-height: 1.5;
+      }
+    }
+
+    &--left h1 {
+      font-size: 90px;
+      color: $blackColor;
+      line-height: 2.3;
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
+
+    &--left p {
+      font-size: 16px;
+      color: $blackColor;
+      margin-top: 1 rem;
+      font-weight: 700;
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
+
+    &--right {
+      text-align: center;
+    }
+
+    &--img {
+      filter: grayscale(0);
+      max-width: 300px;
+      border-radius: 200px;
+      margin: 0 5vw;
+      box-shadow: 0 0 20px rgba(black, 0.3);
+    }
+  }
+}

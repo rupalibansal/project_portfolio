@@ -1,0 +1,138 @@
+.navbar__menu--links, .navbar__menu, .navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  background-color: #6b8a7a;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  z-index: 10;
+  position: relative;
+}
+.navbar__logo {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 24px;
+}
+.navbar__bars {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .navbar__bars {
+    color: #254336;
+    opacity: 1;
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    font-size: 2rem;
+  }
+}
+.navbar__menu {
+  list-style: none;
+  text-align: center;
+  margin-right: 24px;
+}
+@media screen and (max-width: 768px) {
+  .navbar__menu {
+    display: none;
+  }
+}
+.navbar__menu--links {
+  color: black;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 1rem;
+}
+.navbar__menu--links:hover {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.about {
+  background-color: #dad3be;
+  padding: 0 60px;
+}
+.about__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 90vh;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+@media screen and (max-width: 768px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    height: 100%;
+  }
+}
+.about__container--text {
+  max-width: 900px;
+  padding: 10px;
+}
+.about__container--left {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 1.2;
+}
+@media screen and (max-width: 768px) {
+  .about__container--left {
+    padding: 5rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .about__container--left {
+    line-height: 1.5;
+  }
+}
+.about__container--left h1 {
+  font-size: 90px;
+  color: black;
+  line-height: 2.3;
+}
+@media screen and (max-width: 280px) {
+  .about__container--left h1 {
+    font-size: 1.5rem;
+  }
+}
+.about__container--left p {
+  font-size: 16px;
+  color: black;
+  margin-top: 1 rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 280px) {
+  .about__container--left p {
+    font-size: 1.5rem;
+  }
+}
+.about__container--right {
+  text-align: center;
+}
+.about__container--img {
+  filter: grayscale(0);
+  max-width: 300px;
+  border-radius: 200px;
+  margin: 0 5vw;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
